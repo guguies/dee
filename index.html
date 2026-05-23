@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DEE - Dauphine Erasmus Exchange</title>
+<script>
+  /*
+    Cette classe sert uniquement au CSS.
+    Elle permet d’afficher immédiatement la bonne section selon l’URL :
+    - avec #missions → affiche missions directement
+    - sans hash → affiche accueil
+  */
+  document.documentElement.classList.toggle("has-hash", Boolean(window.location.hash));
+</script>
+<link rel="stylesheet" href="/src/styles.css" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="site-header is-transparent" id="siteHeader">
+    <nav class="navbar" aria-label="Navigation principale">
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-left">
+        <a href="#accueil" class="logo-link nav-link" aria-label="Accueil">
+          <img
+            src="assets/logo-white.png"
+            data-logo-white="assets/logo-white.png"
+            data-logo-blue="assets/logo-blue.png"
+            alt="Logo DEE"
+            class="logo"
+            id="siteLogo"
+          />
+        </a>
+
+        <a href="#qui-sommes-nous" class="nav-link">Qui sommes-nous</a>
+        <a href="#missions" class="nav-link">Nos missions</a>
+        <a href="#actu" class="nav-link">Notre actu</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#boutique" class="nav-link">Boutique</a>
+        <a href="#billetterie" class="nav-link">Billetterie</a>
+        <a href="#contact" class="nav-link nav-contact">Contactez-nous</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE ACCUEIL -->
+    <section class="page" id="accueil" data-page="accueil">
+      <section class="hero hero-home">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+        <p class="hero-subtitle-top">Bienvenue à la</p>
+
+        <h1>
+        DAUPHINE<br>
+        ERASMUS<br>
+        EXCHANGE
+        </h1>
+
+        <a href="#qui-sommes-nous" class="hero-btn-secondary">
+        En savoir plus
+        </a>
+         </div>
+         <a class="scroll-indicator">
+        <span></span>
+        </a>
+      </section>
+
+      <section class="home-summary">
+        <article class="summary-block">
+          <div class="summary-image placeholder-image">
+            <img src="./assets/photogroup.png" alt="photoqui">
+          </div>
+
+          <div class="summary-text">
+            <p class="section-label">Qui sommes-nous</p>
+            <h2>Une association tournée vers l’international</h2>
+            <p>
+              DEE accompagne les étudiants internationaux de Dauphine dans leur
+              intégration à Paris, tout en créant des moments de rencontre entre
+              étudiants français et étrangers.
+            </p>
+            <a href="#qui-sommes-nous" class="button-primary">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="summary-block reverse">
+          <div class="summary-image placeholder-image">
+            <img src="./assets/photogrouperasmus.png" alt="photomission">
+          </div>
+
+          <div class="summary-text">
+            <p class="section-label">Nos missions</p>
+            <h2>Accueillir, connecter, faire découvrir</h2>
+            <p>
+              Notre objectif est simple : faire vivre une expérience humaine,
+              culturelle et étudiante forte aux étudiants en échange à Dauphine.
+            </p>
+            <a href="#missions" class="button-primary">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="summary-block">
+          <div class="summary-image placeholder-image">
+            <img src="./assets/bateau.png" alt="photoactu">
+          </div>
+
+          <div class="summary-text">
+            <p class="section-label">Notre actu</p>
+            <h2>Événements, sorties et temps forts</h2>
+            <p>
+              Suivez nos derniers événements, nos projets en cours et les
+              moments forts de la vie associative de DEE.
+            </p>
+            <a href="#actu" class="button-primary">En savoir plus</a>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- AUTRES PAGES : structures provisoires -->
+    <section class="page" id="qui-sommes-nous" data-page="qui-sommes-nous">
+  <section class="about-hero">
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+      <p class="about-kicker">DEE — Dauphine Erasmus Exchange</p>
+      <h1>Qui sommes-nous</h1>
+      <p>
+        L’association qui accueille, accompagne et connecte les étudiants internationaux
+        de Dauphine à la vie parisienne, associative et étudiante.
+      </p>
+    </div>
+  </section>
+
+  <section class="about-content">
+    <div class="about-text">
+      <h2>Une passerelle entre Dauphine, Paris et le monde</h2>
+
+      <p>
+        <p>
+          Dauphine Erasmus Exchange, plus connue sous le nom de DEE, est l’association
+          dédiée à l’accueil et à l’intégration des étudiants internationaux de
+          l’<strong>Université Paris Dauphine – PSL</strong>. Depuis plusieurs années,
+          notre mission est d’accompagner les étudiants venus du monde entier dans leur
+          découverte de la vie étudiante à Paris, tout en favorisant les échanges culturels,
+          les rencontres et la création d’une véritable communauté internationale au sein
+          de l’université.
+        </p>
+
+        <p>
+          Arriver dans un nouveau pays représente toujours une expérience à la fois
+          excitante et intimidante. Entre les démarches administratives, la découverte
+          d’une nouvelle culture, l’adaptation à un nouvel environnement académique et
+          la rencontre avec de nouvelles personnes, les premières semaines peuvent être
+          particulièrement intenses pour les étudiants en mobilité internationale.
+          C’est précisément pour répondre à ces enjeux que DEE existe : offrir un cadre
+          chaleureux, accessible et dynamique permettant à chaque étudiant de se sentir
+          rapidement chez lui à Dauphine et à Paris.
+        </p>
+
+        <p>
+          Notre rôle ne se limite pas à organiser des événements. Nous accompagnons les
+          étudiants tout au long de leur semestre ou de leur année d’échange afin de rendre
+          leur expérience plus simple, plus enrichissante et plus humaine. Nous croyons
+          profondément que les échanges internationaux représentent bien plus qu’un simple
+          parcours universitaire : ils sont une opportunité unique de grandir, de découvrir
+          de nouvelles perspectives et de construire des relations durables avec des personnes
+          venues des quatre coins du monde.
+        </p>
+
+        <p>
+          Chaque semestre, DEE met en place un large programme d’activités destiné à créer
+          du lien entre étudiants internationaux et étudiants dauphinois. Nous organisons
+          des soirées d’intégration, des rencontres informelles, des cafés linguistiques,
+          des événements culturels, des activités sportives, des week-ends, des voyages
+          ainsi que des sorties à travers Paris et en France. Ces moments permettent non
+          seulement de découvrir la culture française, mais aussi de partager les cultures,
+          traditions et expériences de chacun dans un esprit d’ouverture et de convivialité.
+        </p>
+
+        <p>
+          Paris est une ville exceptionnelle, riche d’histoire, d’art, de culture et
+          d’opportunités. Pourtant, il peut parfois être difficile pour un étudiant
+          étranger de réellement découvrir la ville au-delà de son quotidien universitaire.
+          C’est pourquoi DEE cherche à faire vivre aux étudiants internationaux une expérience
+          parisienne authentique, à travers des visites, des activités et des événements
+          qui leur permettent d’explorer la capitale sous toutes ses facettes.
+        </p>
+
+        <p>
+          L’association repose avant tout sur des valeurs de partage, de diversité,
+          d’inclusion et de bienveillance. Nous sommes convaincus que les rencontres
+          internationales enrichissent autant les étudiants étrangers que les étudiants
+          locaux. À travers DEE, nous voulons créer un espace où chacun peut échanger,
+          apprendre des autres, développer sa curiosité et construire des amitiés qui
+          dépassent les frontières.
+        </p>
+
+        <p>
+          Au-delà des événements et des activités, DEE représente également un véritable
+          réseau étudiant. Beaucoup de liens créés au sein de l’association continuent
+          bien après la fin des échanges universitaires. Notre communauté rassemble des
+          étudiants aux parcours, cultures et ambitions variés, unis par une même envie :
+          vivre pleinement une expérience internationale unique.
+        </p>
+
+        <p>
+          Nous travaillons chaque année pour améliorer l’accueil des étudiants internationaux
+          et rendre leur intégration toujours plus fluide et agréable. Notre équipe est
+          composée d’étudiants engagés, motivés et passionnés par les échanges culturels,
+          qui mettent leur énergie au service de la communauté internationale de Dauphine.
+        </p>
+
+        <p>
+          Rejoindre DEE, c’est bien plus que participer à des événements. C’est intégrer
+          une communauté ouverte sur le monde, rencontrer des personnes inspirantes,
+          découvrir de nouvelles cultures et créer des souvenirs inoubliables au cœur
+          de Paris. Que vous soyez étudiant international ou étudiant dauphinois,
+          DEE est l’endroit idéal pour vivre pleinement l’expérience internationale
+          de Dauphine.
+        </p>
+      </p>
+    </div>
+  </section>
+
+  <section class="team-section team-office">
+    <div class="section-heading">
+      <p class="section-label-light">L’équipe</p>
+      <h2>Le bureau</h2>
+      <p>
+        Le bureau coordonne l’association, structure les projets et assure le lien entre
+        les pôles, l’université et les étudiants internationaux.
+      </p>
+    </div>
+
+    <div class="team-global-photo">
+      Photo globale du bureau à ajouter
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="team-photo">Photo Président</div>
+        <h3>Président</h3>
+        <p>Aprile Shimowski</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-photo">Photo Vice-présidente</div>
+        <h3>Vice-présidente</h3>
+        <p>Chloé Pointel</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-photo">Photo Trésorier</div>
+        <h3>Trésorier</h3>
+        <p>Thibault Rousseau</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="team-section team-poles">
+    <div class="section-heading">
+      <p class="section-label">Organisation</p>
+      <h2>Les pôles</h2>
+      <p>
+        Chaque pôle porte une partie essentielle de la vie de DEE : événements,
+        communication, partenariats, sorties et accompagnement des Erasmus.
+      </p>
+    </div>
+
+    <div class="poles-grid">
+      <article class="pole-card">
+        <div class="pole-photo">Image pôle Bar</div>
+        <h3>Pôle Bar</h3>
+        <p>Anime les moments conviviaux et les formats informels de rencontre.</p>
+      </article>
+
+      <article class="pole-card">
+        <div class="pole-photo">Image pôle Soirée</div>
+        <h3>Pôle Soirée</h3>
+        <p>Imagine et organise les grands événements festifs de l’association.</p>
+      </article>
+
+      <article class="pole-card">
+        <div class="pole-photo">Image pôle Partenariat</div>
+        <h3>Pôle Partenariat</h3>
+        <p>Développe les collaborations avec les acteurs étudiants et professionnels.</p>
+      </article>
+
+      <article class="pole-card">
+        <div class="pole-photo">Image pôle Sortie X Wei</div>
+        <h3>Pôle Sortie X Wei</h3>
+        <p>Prépare les sorties, voyages et expériences collectives marquantes.</p>
+      </article>
+
+      <article class="pole-card">
+        <div class="pole-photo">Image pôle Com</div>
+        <h3>Pôle Com</h3>
+        <p>Fait vivre l’image de DEE sur les réseaux et auprès des étudiants.</p>
+      </article>
+
+      <article class="pole-card">
+        <div class="pole-photo">Image pôle Erasme</div>
+        <h3>Pôle Erasme</h3>
+        <p>Accompagne les étudiants internationaux au quotidien dans leur intégration.</p>
+      </article>
+    </div>
+  </section>
+</section>
+
+    <section class="page" id="missions" data-page="missions">
+      <section class="missions-hero">
+        <div class="missions-hero-overlay"></div>
+        <div class="missions-hero-content">
+          <p class="about-kicker">Nos missions</p>
+          <h1>Accueillir, intégrer, faire vivre l’expérience Erasmus</h1>
+          <p>
+            DEE accompagne les étudiants internationaux dès leur arrivée à Dauphine
+            et leur fait découvrir Paris à travers des événements humains, culturels
+            et festifs.
+          </p>
+        </div>
+      </section>
+
+      <section class="missions-content">
+        <div class="missions-intro">
+          <div class="missions-intro-inner">
+          <h2>Créer des souvenirs dès les premiers jours</h2>
+          <p>
+              La mission de <strong>Dauphine Erasmus Exchange</strong> est d’offrir aux étudiants
+              internationaux bien plus qu’un simple accueil administratif à leur arrivée à
+              l’<strong>Université Paris Dauphine – PSL</strong>. Nous voulons leur permettre
+              de se sentir attendus, accompagnés et rapidement intégrés à la vie étudiante
+              dauphinoise dès leurs premiers jours à Paris.
+          </p>
+            <p>
+              Arriver dans un nouveau pays représente toujours une étape importante.
+              Entre la découverte d’une nouvelle ville, d’un nouveau système universitaire,
+              d’une nouvelle culture et la nécessité de créer rapidement de nouveaux repères,
+              les premières semaines d’un échange universitaire peuvent être aussi enrichissantes
+              que déstabilisantes. C’est pourquoi DEE cherche avant tout à créer un environnement
+              chaleureux, accessible et humain, dans lequel chaque étudiant international peut
+              trouver sa place et construire des liens durables.
+            </p>
+
+            <p>
+              Notre objectif est de transformer l’expérience Erasmus en une véritable aventure
+              humaine et culturelle. Nous voulons que les étudiants ne gardent pas seulement
+              le souvenir d’un semestre académique à Paris, mais celui d’une expérience complète,
+              faite de rencontres, de découvertes, de voyages, d’événements et de moments partagés.
+            </p>
+
+            <p>
+              Tout au long de l’année, nous organisons des activités destinées à favoriser
+              les échanges entre étudiants internationaux et étudiants dauphinois.
+              À travers nos événements, nous cherchons à créer une communauté ouverte,
+              dynamique et inclusive où chacun peut facilement rencontrer de nouvelles personnes,
+              découvrir différentes cultures et vivre pleinement la vie étudiante parisienne.
+            </p>
+          </div>
+        </div>
+
+        <div class="missions-image-row">
+          <img src="https://media.licdn.com/dms/image/v2/C4D1BAQF32CzQc423fw/company-background_10000/company-background_10000/0/1589127374128/dauphine_erasmus_exchange_cover?e=2147483647&v=beta&t=be7zGG3oLWquuaL4p87ow8uBfsqzU1mQNhlS82LZINw" alt="Welcome Week DEE">
+          <img src="https://static3.dauphine.psl.eu/fileadmin/_processed_/a/4/csm_erasmus-dai_b36844a26e.jpeg" alt="Accueil Erasmus Dauphine">
+        </div>
+
+        <div class="missions-grid-text">
+          <article>
+            <h3>Welcome Weeks</h3>
+              <p>
+                Deux fois par an, au début de chaque semestre universitaire, DEE organise une
+                <strong>Welcome Week</strong> complète afin d’accompagner les nouveaux étudiants
+                internationaux dans leurs premiers jours à Dauphine et à Paris.
+              </p>
+
+              <p>
+                Ces semaines d’intégration constituent souvent le premier contact des étudiants
+                avec leur nouvelle vie en France. Elles sont pensées comme un moment essentiel
+                pour créer rapidement des liens, découvrir l’université et prendre ses marques
+                dans un environnement encore inconnu.
+              </p>
+
+              <p>
+                Pendant les Welcome Weeks, nous organisons des accueils directement sur le campus,
+                des rencontres avec les étudiants français, des présentations de la vie associative,
+                des visites de l’université ainsi que plusieurs activités conviviales permettant
+                aux étudiants de se rencontrer naturellement.
+              </p>
+
+              <p>
+                Nous proposons également des visites de Paris afin de permettre aux nouveaux
+                arrivants de découvrir les lieux emblématiques de la capitale, son histoire,
+                son ambiance et ses différents quartiers. Ces moments offrent l’occasion de créer
+                rapidement des amitiés et de commencer le semestre dans une atmosphère détendue
+                et internationale.
+              </p>
+
+              <p>
+                Les Welcome Weeks représentent aujourd’hui l’un des moments les plus importants
+                de la vie de l’association. Elles donnent le ton du semestre et permettent de
+                construire dès le départ une véritable communauté entre étudiants venus du monde entier.
+              </p>
+          </article>
+
+          <article>
+            <h3>Bars Erasmus</h3>
+              <p>
+                Tout au long du semestre, DEE organise régulièrement des <strong>Bars Erasmus</strong>,
+                devenus au fil des années des rendez-vous incontournables de la communauté internationale
+                de Dauphine.
+              </p>
+
+              <p>
+                Ces soirées permettent aux étudiants de continuer à se retrouver après les premières
+                semaines d’intégration et de maintenir le lien créé pendant la Welcome Week.
+                Elles favorisent les échanges entre étudiants internationaux, étudiants français
+                et parfois même anciens Erasmus revenus à Paris.
+              </p>
+
+              <p>
+                Les Bars Erasmus ont pour objectif de créer des moments simples, accessibles et
+                conviviaux où chacun peut rencontrer de nouvelles personnes dans une ambiance détendue.
+                Ils permettent aussi de mélanger les promotions, les nationalités et les parcours,
+                renforçant ainsi l’esprit de communauté qui caractérise DEE.
+              </p>
+
+              <p>
+                Au-delà des soirées elles-mêmes, ces événements participent pleinement à l’expérience
+                Erasmus des étudiants. Ils deviennent souvent des souvenirs marquants du semestre
+                et jouent un rôle important dans la création d’amitiés durables.
+              </p>
+          </article>
+
+          <article>
+            <h3>Paris Erasmus Life</h3>
+              <p>
+                Grâce à notre partenariat avec <strong>Paris Erasmus Life</strong>, DEE ouvre également
+                ses étudiants à un réseau beaucoup plus large d’étudiants internationaux présents
+                dans toute la capitale.
+              </p>
+
+              <p>
+                Ce partenariat permet de participer à des événements communs réunissant des étudiants
+                issus de nombreuses universités et écoles parisiennes. Il offre ainsi aux étudiants
+                de Dauphine l’opportunité de découvrir une dimension encore plus internationale
+                de leur expérience à Paris.
+              </p>
+
+              <p>
+                À travers cette collaboration, les étudiants peuvent participer à des soirées,
+                des rencontres inter-écoles, des voyages, des week-ends touristiques et différentes
+                activités organisées dans plusieurs villes françaises et européennes.
+              </p>
+
+              <p>
+                Cette ouverture vers d’autres communautés internationales permet aux Erasmus
+                de multiplier les rencontres, d’élargir leur réseau et de profiter pleinement
+                de la richesse culturelle et étudiante qu’offre Paris.
+              </p>
+          </article>
+
+          <article>
+            <h3>Vie associative dauphinoise</h3>
+              <p>
+                DEE participe également activement à la vie associative de Dauphine.
+                L’association collabore régulièrement avec d’autres associations étudiantes
+                afin d’intégrer les étudiants internationaux à l’ensemble de la vie du campus.
+              </p>
+
+              <p>
+                Soirées étudiantes, événements sportifs, projets collectifs, voyages, activités
+                culturelles ou initiatives solidaires : notre objectif est de permettre aux Erasmus
+                de découvrir pleinement l’écosystème associatif dauphinois et de ne jamais rester
+                isolés pendant leur échange.
+              </p>
+
+              <p>
+                Nous voulons créer des passerelles entre les étudiants internationaux et les étudiants
+                français afin de favoriser des échanges naturels et enrichissants pour tous.
+                Cette mixité constitue l’une des valeurs fondamentales de DEE et contribue à faire
+                vivre un véritable esprit international au sein de Dauphine.
+              </p>
+
+              <p>
+                Plus qu’une simple association d’accueil, DEE est aujourd’hui une communauté
+                étudiante dynamique qui accompagne les étudiants internationaux tout au long
+                de leur expérience à Paris. Notre ambition est de rendre chaque échange universitaire
+                plus humain, plus vivant et plus mémorable, en créant des moments qui dépassent
+                largement le cadre académique.
+              </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="missions-events">
+        <div class="missions-events-layout">
+          <div class="missions-events-text">
+            <div class="section-heading">
+              <p class="section-label-light">Nos événements emblématiques</p>
+
+              <h2>Folies Dau & Eldorado</h2>
+
+              <p>
+                Au-delà de l’accueil et des sorties, DEE est aussi reconnue pour ses
+                deux grandes soirées emblématiques : les Folies Dau en novembre et
+                l’Eldorado en février. Ces événements rassemblent étudiants
+                internationaux, dauphinois et partenaires autour de moments forts qui
+                marquent chaque semestre.
+              </p>
+            </div>
+
+            <div class="event-highlight">
+              <h3>Les Folies Dau — novembre</h3>
+
+              <p>
+                Les Folies Dau sont l’un des temps forts du premier semestre. Cette
+                soirée incarne l’énergie de DEE : une ambiance internationale, une
+                organisation ambitieuse et une volonté de rassembler les étudiants
+                autour d’un événement fédérateur.
+              </p>
+            </div>
+
+            <div class="event-highlight">
+              <h3>L’Eldorado — février</h3>
+
+              <p>
+                L’Eldorado ouvre le second semestre avec la même ambition : créer une
+                soirée mémorable, festive et ouverte, qui donne le ton de la nouvelle
+                période Erasmus à Dauphine.
+              </p>
+            </div>
+          </div>
+
+          <div class="missions-events-image">
+            <img
+              src="https://lightroom.adobe.com/v2c/spaces/a0c5d4189a0e4096a0572d355c5af72d/assets/88236e09d8f3469f998a6a0724fa6ba0/revisions/064125c8b523487eb5e8bd020542cb62/renditions/b2d9d26afb1fe2fe0b91fd9aa5cde9a5"
+              alt="Soirée DEE"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="missions-gallery">
+        <div class="section-heading">
+          <p class="section-label">Galerie</p>
+          <h2>Nos soirées en images</h2>
+        </div>
+
+        <div class="gallery-featured">
+          <img src="https://lightroom.adobe.com/v2c/spaces/fa0d89e9e8194414bae569957b63a489/assets/18651e780dc341aab3b684b4577e9847/revisions/1bcf5048925a5e43bb28595a25fb5973/renditions/9a81b51ab938f387d46ce3b5e68d564c" alt="Soirée DEE">
+        </div>
+
+        <div class="gallery-grid">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/06083a4edc144eb19fa6b7762a5a3851/revisions/5f4b3478cfc248669d924e333ffa2281/renditions/8d56ca3d8237bf1ca915bc6b11a4c878" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/2b2da2ed5e8841e99426fe84bb723f75/revisions/047a065d7e59469db03c047473cf6184/renditions/de2a2033df0fdeac52d9ab397248578a" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/6c4425f4494f4d3d80a24e4c7201c735/revisions/7218c0864f3f4a1c97c7251605f68a4c/renditions/57b748262bc1a0bc7db2012330ac5c29" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/9317823063e24effbf614300668aa4b5/revisions/9352e0359a0c4a2fa246c0f1aa5ba467/renditions/adf48e141952bf99264d242895edf88e" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/31e245c604dd486fa0d011560591533d/revisions/6e45cb5d18f14faaa3c07f1ae6a3736b/renditions/47c1360692a5d7f82ec4867530f93c7a" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/fcfd1a53f679415581fa5a88ef17ad07/revisions/3e06172de5ef47118d0f92e33a44e81e/renditions/b1f37d02799bb1c7b1fa59cee928d805" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/4953426d94cf4b719189b804175badd1/revisions/0d0447fedf2c48f8bad04157f906716c/renditions/27823be9c424bc084abf8d21a2b8c2c7" alt="">
+          <img src="https://lightroom.adobe.com/v2c/spaces/4161813cd4384a7b8d0a44a6b4e96011/assets/24cc412624ba46dc9db6501ed8add4d0/revisions/f0fdce6ea370440892cda89a83ece845/renditions/ab3d494887b5d7431f5cdb2363951017" alt="">
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="actu" data-page="actu">
+    <section class="actu-hero">
+      <div class="actu-hero-content">
+        <p class="about-kicker">Notre actu</p>
+        <h1>Ne manquez rien de la DEE</h1>
+        <p>Retrouvez ici les événements à venir, les dernières actus et les temps forts de l’association.</p>
+      </div>
+    </section>
+
+    <section class="next-events">
+      <div class="section-heading">
+        <p class="section-label">À venir</p>
+        <h2>Prochaines échéances</h2>
+      </div>
+
+      <div class="events-countdown-card">
+        <p>Prochain événement dans</p>
+        <div id="countdown" class="countdown">Chargement...</div>
+      </div>
+
+      <div class="next-events-grid">
+        <article class="next-event-card">
+          <p class="event-date">1er septembre</p>
+          <h3>Welcome Week</h3>
+          <p>Accueil des étudiants internationaux à Dauphine, découverte du campus et premiers moments de rencontre.</p>
+          <span>Université Paris Dauphine - PSL</span>
+        </article>
+
+        <article class="next-event-card">
+          <p class="event-date">1er septembre — soir</p>
+          <h3>Bar Erasmus</h3>
+          <p>Premier rendez-vous convivial du semestre pour lancer l’expérience Erasmus dans une ambiance détendue.</p>
+          <span>Adresse à venir</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="news-feed">
+      <div class="section-heading">
+        <p class="section-label">Actualités</p>
+        <h2>Le fil DEE</h2>
+      </div>
+
+      <article class="news-card">
+        <div class="news-text">
+          <p class="event-date">Dernière actu</p>
+          <h3>DEE à la SPI 45 — Imperia</h3>
+          <p>
+            DEE était présente à Imperia pour la SPI 45 : une expérience forte, entre esprit d’équipe,
+            rencontres étudiantes et souvenirs collectifs.
+          </p>
+        </div>
+
+        <div class="instagram-embed">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DXy2NkmDSCd/" data-instgrm-version="14"></blockquote>
+        </div>
+      </article>
+
+      <article class="news-card reverse">
+        <div class="news-text">
+          <p class="event-date">Soirée emblématique</p>
+          <h3>14e édition de l’Eldorado</h3>
+          <p>
+            Une nouvelle édition de l’Eldorado qui a rassemblé les étudiants autour d’une soirée marquante,
+            festive et fidèle à l’énergie de DEE.
+          </p>
+
+          <a href="https://lightroom.adobe.com/shares/26b16c2f418f4890b17d9b0513226ea4" target="_blank" rel="noopener noreferrer" class="button-primary">
+            Accédez aux photos de la soirée
+          </a>
+        </div>
+
+        <div class="instagram-embed">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DU5_pDTCKLr/" data-instgrm-version="14"></blockquote>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-text">
+          <p class="event-date">Soirée emblématique</p>
+          <h3>14e édition des Folies Dau</h3>
+          <p>
+            Les Folies Dau ont une nouvelle fois marqué le premier semestre avec une soirée fédératrice,
+            internationale et incontournable dans la vie de l’association.
+          </p>
+
+          <a href="https://lightroom.adobe.com/shares/4161813cd4384a7b8d0a44a6b4e96011" target="_blank" rel="noopener noreferrer" class="button-primary">
+            Accédez aux photos de la soirée
+          </a>
+        </div>
+
+        <div class="instagram-embed">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DS2yP38jf-N/" data-instgrm-version="14"></blockquote>
+        </div>
+      </article>
+    </section>
+
+    <section class="instagram-live">
+      <h2>Retrouvez notre actualité en direct sur Instagram</h2>
+
+      <p>@dauphineerasmus</p>
+
+      <a
+        href="https://www.instagram.com/dauphineerasmus/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
+      >
+        Voir notre Instagram
+      </a>
+    </section>
+  </section>
+
+
+    <section class="page" id="boutique" data-page="boutique">
+      <section class="simple-page">
+        <div class="simple-page-content">
+          <p class="about-kicker">Boutique</p>
+          <h1>Boutique DEE</h1>
+          <p>Aucun article pour le moment.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="billetterie" data-page="billetterie">
+      <section class="simple-page">
+        <div class="simple-page-content">
+          <p class="about-kicker">Billetterie</p>
+          <h1>Billetterie DEE</h1>
+          <p>Aucun événement à venir.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="contact" data-page="contact">
+      <section class="contact-hero">
+        <div class="contact-hero-content">
+          <p class="about-kicker">Contactez-nous</p>
+          <h1>Une question, une idée, un projet ?</h1>
+          <p>
+            Que vous soyez étudiant international, partenaire, association dauphinoise
+            ou simplement curieux, l’équipe DEE est là pour vous répondre.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-intro">
+          <p class="section-label">Nous écrire</p>
+          <h2>Entrer en contact avec DEE</h2>
+          <p>Contactez nous également sur Instagram : </p>
+          <a href="https://www.instagram.com/dauphineerasmus/" target="_blank" rel="noopener noreferrer">@dauphineerasmus</a>
+        </div>
+
+        <div class="contact-layout">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label for="contactName">Nom complet</label>
+              <input id="contactName" name="name" type="text" placeholder="Votre nom" required />
+            </div>
+
+            <div class="form-row">
+              <label for="contactEmail">Adresse e-mail</label>
+              <input id="contactEmail" name="email" type="email" placeholder="votre@email.com" required />
+            </div>
+
+            <div class="form-row">
+              <label for="contactSubject">Objet</label>
+              <input id="contactSubject" name="subject" type="text" placeholder="Sujet de votre message" required />
+            </div>
+
+            <div class="form-row">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="7" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit">Envoyer le message</button>
+
+            <p class="form-note">
+              Formulaire non connecté pour le moment. Les données ne sont pas envoyées.
+            </p>
+          </form>
+
+        </div>
+      </section>
+    </section>
+
+
+    <section class="newsletter">
+  <h2>Recevez notre actualité</h2>
+
+  <form class="newsletter-form" id="newsletterForm">
+    <input type="email" name="email" placeholder="Votre adresse e-mail..." required />
+    <button type="submit">S’abonner</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h3>Localisation</h3>
+      <p>Université Paris Dauphine - PSL</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Universit%C3%A9%20Paris%20Dauphine%20PSL" target="_blank" rel="noopener noreferrer">
+        Place du Maréchal de Lattre de Tassigny, 75016 Paris
+      </a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Carte</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Universit%C3%A9%20Paris%20Dauphine%20PSL&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Carte Université Paris Dauphine PSL">
+      </iframe>
+    </div>
+
+    <div class="footer-column">
+      <h3>Horaires</h3>
+      <p>Lundi — vendredi</p>
+      <p>8h — 18h</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Réseaux</h3>
+      <a href="https://www.instagram.com/dauphineerasmus/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/people/Dauphine-ErasmusExchange/100064779756839/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.linkedin.com/company/dauphine-erasmus-exchange/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>dee@dauphine.psl.eu</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      © 2026 Dauphine Erasmus Exchange — Tous droits réservés
+      <span class="footer-credit">
+        — Développé par Antoine Guguen
+      </span>
+    </p>
+  </div>
+  </footer>
+  </main>
+  <script async src="//www.instagram.com/embed.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
